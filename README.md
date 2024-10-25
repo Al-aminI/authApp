@@ -43,3 +43,11 @@ mutation {
     errors
   }
 }
+
+mutation {
+  tokenAuth(username: "ai", password: "P@55w0rd") {
+    token
+  }
+}
+
+This structure provides a clear overview of your project, models, authentication flow, and testing instructions. Let me know if you need any adjustments!
