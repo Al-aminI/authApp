@@ -12,7 +12,7 @@ class CreatePost(graphene.Mutation):
         title = graphene.String(required=True)
         content = graphene.String(required=True)
 
-    # @login_required
+    @login_required
     def mutate(self, info, title, content):
         print(f"Authenticated user: {info.context.user}") 
         try:
